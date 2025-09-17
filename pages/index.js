@@ -258,7 +258,21 @@ export default function MortenLanding() {
 </section>
 
 
-  
+  {/* Clientes */}
+<section id="clientes" className="max-w-7xl mx-auto px-4 py-16">
+  <h2 className="text-3xl font-bold text-center">Clientes</h2>
+  <p className="text-neutral-700 text-center mt-2">Algunas marcas que han confiado en nosotros</p>
+
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mt-10 items-center">
+    {/* Reemplaza estas rutas por tus logos en /public */}
+    {["cliente1.png","cliente2.png","cliente3.png","cliente4.png","cliente5.png"].map((logo) => (
+      <div key={logo} className="h-16 grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition">
+        <img src={`/${logo}`} alt="Cliente" className="h-full mx-auto object-contain" />
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Contacto */}
       <section id="contacto" className="max-w-3xl mx-auto px-4 py-16">
