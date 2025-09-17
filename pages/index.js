@@ -25,6 +25,17 @@ const SERVICIOS = [
 
 export default function MortenLanding() {
   const [open, setOpen] = useState(false);
+useEffect(() => {
+  // Evita restauración automática de scroll y sube al inicio si no hay #ancla
+  if (typeof window !== "undefined") {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    if (!window.location.hash) {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }
+  }
+}, []);
 
   return (
     <div className="min-h-screen text-neutral-900" style={{ backgroundColor: "#FFFFFF" }}>
