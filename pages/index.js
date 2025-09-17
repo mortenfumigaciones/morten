@@ -257,25 +257,8 @@ export default function MortenLanding() {
   </div>
 </section>
 
-{/* Cobertura */}
-<section id="cobertura" className="max-w-7xl mx-auto px-4 py-16">
-  <h2 className="text-3xl font-bold">Cobertura</h2>
-  <p className="text-neutral-700">Atendemos en estas zonas. Si tu ciudad no aparece, pregúntanos.</p>
 
-  <div className="grid md:grid-cols-4 gap-4 mt-6">
-    {[
-      { ciudad: "Guadalajara", detalle: "Jalisco y Zona Metropolitana" },
-      { ciudad: "Puerto Vallarta", detalle: "Bahía de Banderas" },
-      { ciudad: "Querétaro", detalle: "Área metropolitana" },
-      { ciudad: "CDMX", detalle: "Zona centro" },
-    ].map((c) => (
-      <div key={c.ciudad} className="rounded-2xl border p-4 bg-white">
-        <h3 className="font-semibold">{c.ciudad}</h3>
-        <p className="text-sm text-neutral-700">{c.detalle}</p>
-      </div>
-    ))}
-  </div>
-</section>
+  
 
       {/* Contacto */}
       <section id="contacto" className="max-w-3xl mx-auto px-4 py-16">
