@@ -95,6 +95,26 @@ export default function MortenLanding() {
           </div>
         )}
       </header>
+{/* Servicios */}
+<section id="servicios" className="py-16" style={{ backgroundColor: "#F4EDE5" }}>
+  <div className="max-w-7xl mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-8">Servicios</h2>
+    <div className="grid md:grid-cols-3 gap-6">
+      <div className="rounded-2xl bg-white border p-6 hover:shadow-lg transition">
+        <h3 className="mt-1 text-xl font-semibold">Administrativo</h3>
+        <p className="mt-1 text-neutral-700">Oficinas, locales, restaurantes y comercios.</p>
+      </div>
+      <div className="rounded-2xl bg-white border p-6 hover:shadow-lg transition">
+        <h3 className="mt-1 text-xl font-semibold">Residencial</h3>
+        <p className="mt-1 text-neutral-700">Casas, departamentos, jardines y terrazas.</p>
+      </div>
+      <div className="rounded-2xl bg-white border p-6 hover:shadow-lg transition">
+        <h3 className="mt-1 text-xl font-semibold">Industrial</h3>
+        <p className="mt-1 text-neutral-700">Fábricas, hospitales, escuelas y bodegas.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Contacto */}
       <section id="contacto" className="max-w-3xl mx-auto px-4 py-16">
