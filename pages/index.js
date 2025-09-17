@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Phone, Mail, MapPin, ShieldCheck, Bug, Sprout, Clock, CheckCircle2, Menu, X, MessageCircle } from "lucide-react";
 import Image from "next/image";
 
