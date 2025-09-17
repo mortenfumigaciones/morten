@@ -188,27 +188,11 @@ export default function MortenLanding() {
           "Hormigas",
           "Arañas",
           "Alacranes",
-          "Murciélagos",
-          "Aves (palomas)",
           "Termitas y xilófagos",
         ].map((p) => (
           <li key={p} className="border rounded-xl px-3 py-2 bg-white">{p}</li>
         ))}
       </ul>
-    </div>
-
-    {/* Nuestros valores */}
-    <div className="mt-10 grid md:grid-cols-3 gap-4">
-      {[
-        { t: "Atención personalizada", d: "Escuchamos y analizamos cada caso para soluciones a medida." },
-        { t: "Puntualidad y responsabilidad", d: "Cumplimos en tiempo y forma, respetando tus espacios." },
-        { t: "Tecnología actualizada", d: "Métodos y técnicas modernas para mejores resultados." },
-      ].map((v) => (
-        <div key={v.t} className="rounded-2xl bg-white border p-6">
-          <h4 className="font-semibold">{v.t}</h4>
-          <p className="text-neutral-700 text-sm mt-1">{v.d}</p>
-        </div>
-      ))}
     </div>
 
     {/* Plan Anual */}
