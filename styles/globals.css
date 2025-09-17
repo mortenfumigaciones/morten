@@ -4,3 +4,6 @@
 
 html, body, #__next { height: 100%; }
 body { @apply bg-white text-neutral-900; }
+html {
+  scroll-behavior: smooth;
+}
