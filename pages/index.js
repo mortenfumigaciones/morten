@@ -149,6 +149,10 @@ export default function MortenLanding() {
           <p className="text-sm text-neutral-700 mt-1">Cumplimos en tiempo y forma, respetando tus espacios.</p>
         </div>
         <div className="rounded-xl bg-white border p-4">
+          <p className="font-medium">Respeto al medio ambiente</p>
+          <p className="text-sm text-neutral-700 mt-1">Empleamos técnicas y productos que minimizan el impacto ambiental.</p>
+       </div>
+        <div className="rounded-xl bg-white border p-4">
           <p className="font-medium">Tecnología actualizada</p>
           <p className="text-sm text-neutral-700 mt-1">Métodos y técnicas modernas para mejores resultados.</p>
         </div>
