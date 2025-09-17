@@ -98,23 +98,99 @@ export default function MortenLanding() {
 {/* Servicios */}
 <section id="servicios" className="py-16" style={{ backgroundColor: "#F4EDE5" }}>
   <div className="max-w-7xl mx-auto px-4">
-    <h2 className="text-3xl font-bold mb-8">Servicios</h2>
+    <h2 className="text-3xl font-bold mb-2">Servicios</h2>
+    <p className="text-neutral-700 mb-8">
+      Control integral de plagas con soluciones eficaces, seguras y personalizadas para hogares, comercios e industria.
+    </p>
+
+    {/* Tarjetas de servicios principales */}
     <div className="grid md:grid-cols-3 gap-6">
       <div className="rounded-2xl bg-white border p-6 hover:shadow-lg transition">
-        <h3 className="mt-1 text-xl font-semibold">Administrativo</h3>
+        <h3 className="text-xl font-semibold">Administrativo</h3>
         <p className="mt-1 text-neutral-700">Oficinas, locales, restaurantes y comercios.</p>
       </div>
       <div className="rounded-2xl bg-white border p-6 hover:shadow-lg transition">
-        <h3 className="mt-1 text-xl font-semibold">Residencial</h3>
+        <h3 className="text-xl font-semibold">Residencial</h3>
         <p className="mt-1 text-neutral-700">Casas, departamentos, jardines y terrazas.</p>
       </div>
       <div className="rounded-2xl bg-white border p-6 hover:shadow-lg transition">
-        <h3 className="mt-1 text-xl font-semibold">Industrial</h3>
+        <h3 className="text-xl font-semibold">Industrial</h3>
         <p className="mt-1 text-neutral-700">Fábricas, hospitales, escuelas y bodegas.</p>
+      </div>
+    </div>
+
+    {/* Lista de plagas controladas */}
+    <div className="mt-10">
+      <h3 className="text-2xl font-semibold">Plagas que controlamos</h3>
+      <ul className="mt-3 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 text-neutral-800">
+        {[
+          "Cucarachas",
+          "Ratas y ratones",
+          "Mosquitos",
+          "Hormigas",
+          "Arañas",
+          "Alacranes",
+          "Murciélagos",
+          "Aves (palomas)",
+          "Termitas y xilófagos",
+        ].map((p) => (
+          <li key={p} className="border rounded-xl px-3 py-2 bg-white">{p}</li>
+        ))}
+      </ul>
+    </div>
+
+    {/* Nuestros valores */}
+    <div className="mt-10 grid md:grid-cols-3 gap-4">
+      {[
+        { t: "Atención personalizada", d: "Escuchamos y analizamos cada caso para soluciones a medida." },
+        { t: "Puntualidad y responsabilidad", d: "Cumplimos en tiempo y forma, respetando tus espacios." },
+        { t: "Tecnología actualizada", d: "Métodos y técnicas modernas para mejores resultados." },
+      ].map((v) => (
+        <div key={v.t} className="rounded-2xl bg-white border p-6">
+          <h4 className="font-semibold">{v.t}</h4>
+          <p className="text-neutral-700 text-sm mt-1">{v.d}</p>
+        </div>
+      ))}
+    </div>
+
+    {/* Plan Anual */}
+    <div className="mt-12 rounded-2xl border bg-white p-6 md:p-8">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <h3 className="text-2xl font-bold">Plan Anual</h3>
+          <p className="text-neutral-700 mt-1">
+            Servicios programados según tu plan, cobertura preventiva continua y atención prioritaria.
+          </p>
+        </div>
+        <a
+          href="#contacto"
+          className="inline-block px-5 py-3 rounded-xl text-white font-semibold"
+          style={{ backgroundColor: "#7A001F" }}
+        >
+          Solicitar cotización
+        </a>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-4 mt-6 text-neutral-800">
+        <div className="rounded-xl border p-4 bg-neutral-50">
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Servicios programados (según plan personalizado).</li>
+            <li>Cobertura preventiva continua.</li>
+            <li>Atención prioritaria ante incidencias.</li>
+          </ul>
+        </div>
+        <div className="rounded-xl border p-4 bg-neutral-50">
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Productos certificados, seguros para personas y mascotas.</li>
+            <li>Asesoría técnica y recomendaciones preventivas.</li>
+            <li><strong>Ventaja:</strong> protección total durante todo el año con un solo pago.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
       {/* Contacto */}
       <section id="contacto" className="max-w-3xl mx-auto px-4 py-16">
