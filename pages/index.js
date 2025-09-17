@@ -1,0 +1,175 @@
+import { useState } from "react";
+import { Phone, Mail, MapPin, ShieldCheck, Bug, Sprout, Clock, CheckCircle2, Menu, X, MessageCircle } from "lucide-react";
+import Image from "next/image";
+
+const BRAND = {
+  primary: "#7A001F",
+  beige: "#F4EDE5",
+  dark: "#1C1C1C",
+};
+
+const NAV = [
+  { label: "Nosotros", href: "#nosotros" },
+  { label: "Servicios", href: "#servicios" },
+  { label: "Plagas", href: "#plagas" },
+  { label: "Proceso", href: "#proceso" },
+  { label: "Cobertura", href: "#cobertura" },
+  { label: "Contacto", href: "#contacto" },
+];
+
+const SERVICIOS = [
+  { name: "Administrativo", desc: "Oficinas, locales, restaurantes y comercios.", icon: ShieldCheck },
+  { name: "Residencial", desc: "Casas, departamentos, jardines y terrazas.", icon: Sprout },
+  { name: "Industrial", desc: "Fábricas, hospitales, escuelas y bodegas.", icon: Bug },
+];
+
+export default function MortenLanding() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="min-h-screen text-neutral-900" style={{ backgroundColor: "#FFFFFF" }}>
+      {/* Top bar */}
+      <div className="w-full text-white text-sm" style={{ backgroundColor: BRAND.primary }}>
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+          <p className="hidden md:block">MORTEN · Manejo integral y ecológico de plagas</p>
+          <div className="flex items-center gap-4">
+            <a href="tel:+523313113610" className="flex items-center gap-2 hover:opacity-90">
+              <Phone size={16} /> <span>(33) 1311 3610</span>
+            </a>
+            <a href="mailto:mortenfumigaciones@gmail.com" className="flex items-center gap-2 hover:opacity-90">
+              <Mail size={16} /> <span>mortenfumigaciones@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Nav */}
+      <header className="sticky top-0 z-40 border-b bg-white/90 backdrop-blur">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <Image src="/LogoMorten.jpg" alt="MORTEN logo" width={120} height={40} />
+          </div>
+          <nav className="hidden md:flex items-center gap-6">
+            {NAV.map((it) => (
+              <a key={it.href} href={it.href} className="text-sm hover:text-neutral-700">
+                {it.label}
+              </a>
+            ))}
+            <a
+              href="#contacto"
+              className="px-4 py-2 rounded-xl text-white"
+              style={{ backgroundColor: BRAND.primary }}
+            >
+              Cotizar ahora
+            </a>
+          </nav>
+          <button className="md:hidden" onClick={() => setOpen(true)} aria-label="Abrir menú">
+            <Menu />
+          </button>
+        </div>
+        {open && (
+          <div className="md:hidden border-t">
+            <div className="max-w-7xl mx-auto px-4 py-4 space-y-3">
+              <div className="flex justify-between items-center">
+                <span className="font-semibold">Menú</span>
+                <button onClick={() => setOpen(false)} aria-label="Cerrar menú">
+                  <X />
+                </button>
+              </div>
+              <div className="grid gap-2">
+                {NAV.map((it) => (
+                  <a key={it.href} href={it.href} onClick={() => setOpen(false)} className="py-2">
+                    {it.label}
+                  </a>
+                ))}
+                <a
+                  href="#contacto"
+                  onClick={() => setOpen(false)}
+                  className="px-4 py-2 rounded-xl text-white inline-block"
+                  style={{ backgroundColor: BRAND.primary }}
+                >
+                  Cotizar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+      </header>
+
+      {/* Contacto */}
+      <section id="contacto" className="max-w-3xl mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold">¿Dudas o comentarios? Escríbenos</h2>
+        <p className="text-neutral-700">Responderemos lo antes posible.</p>
+
+        {/* IMPORTANTE: para embeber Google Forms usa el enlace de "Enviar -> <>" y pega aquí el src con 'embedded=true'.
+           El link corto forms.gle puede no mostrarse dentro de un iframe. */}
+        <div className="mt-6 grid gap-4">
+          <a
+            className="inline-block px-6 py-3 rounded-xl text-white font-semibold w-full md:w-auto text-center"
+            style={{ backgroundColor: BRAND.primary }}
+            href="https://forms.gle/DCxMdZe2tvpsxb6q6"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Abrir formulario de solicitud
+          </a>
+
+          {/* Ejemplo de embed (reemplaza el src con el que te da Google Forms):
+          <iframe
+            src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true"
+            width="100%"
+            height="700"
+            className="border rounded-2xl"
+            title="Formulario de contacto"
+          ></iframe>
+          */}
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t bg-white">
+        <div className="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+          <div>
+            <Image src="/LogoMorten.jpg" alt="MORTEN logo" width={120} height={40} />
+            <p className="mt-3 text-sm text-neutral-700">
+              Creamos ambientes sanos para hogares y negocios, cuidando el medio ambiente.
+            </p>
+          </div>
+          <div>
+            <h4 className="font-semibold">Servicios</h4>
+            <ul className="mt-2 space-y-1 text-sm">
+              {SERVICIOS.map((s) => (
+                <li key={s.name}><a href="#servicios" className="hover:underline">{s.name}</a></li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold">Contacto</h4>
+            <ul className="mt-2 space-y-1 text-sm">
+              <li className="flex items-center gap-2"><Phone size={16}/> (33) 1311 3610</li>
+              <li className="flex items-center gap-2"><Mail size={16}/> mortenfumigaciones@gmail.com</li>
+              <li className="flex items-center gap-2"><MapPin size={16}/> Guadalajara, Jalisco</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold">Responsable</h4>
+            <p className="text-sm text-neutral-700 mt-2">Rodrigo Villaseñor Ríos</p>
+          </div>
+        </div>
+        <div className="text-center text-xs text-neutral-500 pb-8">© {new Date().getFullYear()} MORTEN. Todos los derechos reservados.</div>
+      </footer>
+
+      {/* Botón flotante WhatsApp */}
+      <a
+        href="https://wa.me/523313113610?text=Hola%20MORTEN,%20necesito%20una%20cotizaci%C3%B3n"
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-5 right-5 rounded-full p-4 shadow-lg text-white"
+        style={{ backgroundColor: "#25D366" }}
+        aria-label="Abrir WhatsApp"
+      >
+        <MessageCircle size={24} />
+      </a>
+    </div>
+  );
+}
