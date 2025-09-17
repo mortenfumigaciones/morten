@@ -152,6 +152,30 @@ export default function MortenLanding() {
     </div>
   </div>
 </section>
+{/* Proceso */}
+<section id="proceso" className="py-16" style={{ backgroundColor: "#F4EDE5" }}>
+  <div className="max-w-7xl mx-auto px-4">
+    <h2 className="text-3xl font-bold">Nuestro proceso</h2>
+    <p className="text-neutral-700 mt-1">Así operamos cada servicio:</p>
+
+    <div className="grid md:grid-cols-4 gap-6 mt-8">
+      {[
+        { n: 1, t: "Contacto", d: "Escríbenos por WhatsApp, teléfono o formulario." },
+        { n: 2, t: "Inspección", d: "Visita técnica y diagnóstico del inmueble." },
+        { n: 3, t: "Tratamiento", d: "Aplicamos el método más efectivo y seguro." },
+        { n: 4, t: "Mantenimiento", d: "Plan anual/preventivo o servicio por evento." },
+      ].map((s) => (
+        <div key={s.n} className="rounded-2xl bg-white border p-6">
+          <div className="w-9 h-9 rounded-lg grid place-items-center text-white font-semibold" style={{ backgroundColor: "#7A001F" }}>
+            {s.n}
+          </div>
+          <h3 className="mt-3 font-semibold">{s.t}</h3>
+          <p className="text-sm text-neutral-700">{s.d}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
 {/* Servicios */}
 <section id="servicios" className="py-16" style={{ backgroundColor: "#F4EDE5" }}>
