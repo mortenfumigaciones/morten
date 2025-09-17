@@ -95,6 +95,30 @@ export default function MortenLanding() {
           </div>
         )}
       </header>
+{/* Hero con imagen de fondo suave */}
+<section className="relative overflow-hidden" style={{ backgroundColor: "#F4EDE5" }}>
+  <div className="absolute inset-0 opacity-20" style={{backgroundImage: "url('/fondo-plagas.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}/>
+  <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+        Manejo ecológico de plagas para hogar y negocio
+      </h1>
+      <p className="mt-4 text-lg text-neutral-700">
+        Tratamientos seguros con productos certificados y servicio programado.
+      </p>
+      <div className="mt-6 flex gap-3">
+        <a href="#contacto" className="px-5 py-3 rounded-xl text-white font-medium" style={{ backgroundColor: "#7A001F" }}>
+          Cotizar ahora
+        </a>
+        <a href="#servicios" className="px-5 py-3 rounded-xl border">Ver servicios</a>
+      </div>
+    </div>
+    <div className="rounded-2xl shadow-xl border bg-white p-6">
+      <p className="text-sm text-neutral-700">COFEPRIS • Reporte post-servicio • Garantía por escrito</p>
+    </div>
+  </div>
+</section>
+
 {/* ¿Quiénes somos? */}
 <section id="nosotros" className="max-w-7xl mx-auto px-4 py-16">
   <div className="grid md:grid-cols-2 gap-10 items-start">
@@ -173,6 +197,29 @@ export default function MortenLanding() {
           <p className="text-sm text-neutral-700">{s.d}</p>
         </div>
       ))}
+    </div>
+  </div>
+</section>
+{/* Hero con imagen de fondo suave */}
+<section className="relative overflow-hidden" style={{ backgroundColor: "#F4EDE5" }}>
+  <div className="absolute inset-0 opacity-20" style={{backgroundImage: "url('/fondo-plagas.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}/>
+  <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+        Manejo ecológico de plagas para hogar y negocio
+      </h1>
+      <p className="mt-4 text-lg text-neutral-700">
+        Tratamientos seguros con productos certificados y servicio programado.
+      </p>
+      <div className="mt-6 flex gap-3">
+        <a href="#contacto" className="px-5 py-3 rounded-xl text-white font-medium" style={{ backgroundColor: "#7A001F" }}>
+          Cotizar ahora
+        </a>
+        <a href="#servicios" className="px-5 py-3 rounded-xl border">Ver servicios</a>
+      </div>
+    </div>
+    <div className="rounded-2xl shadow-xl border bg-white p-6">
+      <p className="text-sm text-neutral-700">COFEPRIS • Reporte post-servicio • Garantía por escrito</p>
     </div>
   </div>
 </section>
@@ -257,6 +304,29 @@ export default function MortenLanding() {
   </div>
 </section>
 
+{/* Hero con imagen de fondo suave */}
+<section className="relative overflow-hidden" style={{ backgroundColor: "#F4EDE5" }}>
+  <div className="absolute inset-0 opacity-20" style={{backgroundImage: "url('/fondo-plagas.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}/>
+  <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+        Manejo ecológico de plagas para hogar y negocio
+      </h1>
+      <p className="mt-4 text-lg text-neutral-700">
+        Tratamientos seguros con productos certificados y servicio programado.
+      </p>
+      <div className="mt-6 flex gap-3">
+        <a href="#contacto" className="px-5 py-3 rounded-xl text-white font-medium" style={{ backgroundColor: "#7A001F" }}>
+          Cotizar ahora
+        </a>
+        <a href="#servicios" className="px-5 py-3 rounded-xl border">Ver servicios</a>
+      </div>
+    </div>
+    <div className="rounded-2xl shadow-xl border bg-white p-6">
+      <p className="text-sm text-neutral-700">COFEPRIS • Reporte post-servicio • Garantía por escrito</p>
+    </div>
+  </div>
+</section>
 
   {/* Clientes */}
 <section id="clientes" className="max-w-7xl mx-auto px-4 py-16">
