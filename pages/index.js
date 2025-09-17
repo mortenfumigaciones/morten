@@ -95,6 +95,64 @@ export default function MortenLanding() {
           </div>
         )}
       </header>
+{/* ¿Quiénes somos? */}
+<section id="nosotros" className="max-w-7xl mx-auto px-4 py-16">
+  <div className="grid md:grid-cols-2 gap-10 items-start">
+    <div>
+      <h2 className="text-3xl font-bold mb-3">¿Quiénes somos?</h2>
+      <p className="text-neutral-700">
+        <strong>Morten Fumigaciones</strong> es una empresa dedicada al control integral de plagas,
+        enfocada en soluciones eficaces, seguras y personalizadas para hogares, comercios e industrias.
+        Nuestro compromiso es proteger la salud de las personas, cuidar los espacios y preservar el
+        medio ambiente, mediante productos certificados y técnicas modernas de aplicación.
+      </p>
+      <p className="text-neutral-700 mt-3">
+        Priorizamos un servicio responsable, transparente y de calidad, construyendo relaciones de confianza
+        con cada cliente.
+      </p>
+    </div>
+
+    {/* Valores en tarjetas cortas */}
+    <div className="rounded-2xl border p-6 bg-neutral-50">
+      <h3 className="text-xl font-semibold">Nuestros valores</h3>
+      <div className="mt-4 grid sm:grid-cols-2 gap-3">
+        <div className="rounded-xl bg-white border p-4">
+          <p className="font-medium">Atención personalizada</p>
+          <p className="text-sm text-neutral-700 mt-1">Escuchamos y analizamos cada caso para soluciones a medida.</p>
+        </div>
+        <div className="rounded-xl bg-white border p-4">
+          <p className="font-medium">Puntualidad y responsabilidad</p>
+          <p className="text-sm text-neutral-700 mt-1">Cumplimos en tiempo y forma, respetando tus espacios.</p>
+        </div>
+        <div className="rounded-xl bg-white border p-4">
+          <p className="font-medium">Tecnología actualizada</p>
+          <p className="text-sm text-neutral-700 mt-1">Métodos y técnicas modernas para mejores resultados.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Misión y Visión */}
+<section id="mision-vision" className="py-16" style={{ backgroundColor: "#F4EDE5" }}>
+  <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-6">
+    <div className="rounded-2xl bg-white border p-6">
+      <h3 className="text-2xl font-bold">Misión</h3>
+      <p className="text-neutral-700 mt-2">
+        Brindar servicios de control de plagas con altos estándares de calidad, utilizando productos
+        seguros y métodos eficientes para proteger la salud, los espacios y el bienestar de nuestros clientes.
+      </p>
+    </div>
+    <div className="rounded-2xl bg-white border p-6">
+      <h3 className="text-2xl font-bold">Visión</h3>
+      <p className="text-neutral-700 mt-2">
+        Ser una empresa líder en fumigaciones, reconocida por su efectividad, profesionalismo y compromiso
+        con el medio ambiente, posicionándonos como una solución confiable y sostenible a nivel regional.
+      </p>
+    </div>
+  </div>
+</section>
+
 {/* Servicios */}
 <section id="servicios" className="py-16" style={{ backgroundColor: "#F4EDE5" }}>
   <div className="max-w-7xl mx-auto px-4">
