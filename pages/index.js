@@ -201,7 +201,7 @@ useEffect(() => {
         { n: 1, t: "Contacto", d: "Escríbenos por WhatsApp, teléfono o formulario." },
         { n: 2, t: "Inspección", d: "Visita técnica y diagnóstico del inmueble." },
         { n: 3, t: "Tratamiento", d: "Aplicamos el método más efectivo y seguro." },
-        { n: 4, t: "Mantenimiento", d: "Plan anual/preventivo o servicio por evento." },
+        { n: 4, t: "Seguimiento", d: "Plan anual o servicio por evento." },
       ].map((s) => (
         <div key={s.n} className="rounded-2xl bg-white border p-6">
           <div className="w-9 h-9 rounded-lg grid place-items-center text-white font-semibold" style={{ backgroundColor: "#7A001F" }}>
