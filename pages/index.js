@@ -13,7 +13,6 @@ const NAV = [
   { label: "Servicios", href: "#servicios" },
   { label: "Plagas", href: "#plagas" },
   { label: "Proceso", href: "#proceso" },
-  { label: "Cobertura", href: "#cobertura" },
   { label: "Contacto", href: "#contacto" },
 ];
 
