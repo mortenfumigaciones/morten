@@ -105,47 +105,41 @@ useEffect(() => {
           </div>
         )}
       </header>
-{/* Hero con imagen de fondo suave */}
-<section className="relative overflow-hidden" style={{ backgroundColor: "#F4EDE5" }}>
-  <div className="absolute inset-0 opacity-20" style={{backgroundImage: "url('/fondo-plagas.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}/>
-  <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
-    <div>
+{/* Hero con imagen de fondo */}
+<section
+  className="relative overflow-hidden text-white"
+  style={{
+    backgroundImage: "url('/hero.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  <div className="bg-black/50">
+    <div className="max-w-7xl mx-auto px-4 py-24 md:py-36">
       <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-        Manejo ecológico de plagas para hogar y negocio
+        Manejo ecológico de plagas en Guadalajara
       </h1>
-      <p className="mt-4 text-lg text-neutral-700">
-        Tratamientos seguros con productos certificados y servicio programado.
+      <p className="mt-4 text-lg max-w-2xl">
+        Soluciones seguras y personalizadas para hogares, comercios e industrias.
       </p>
       <div className="mt-6 flex gap-3">
-        <a href="#contacto" className="px-5 py-3 rounded-xl text-white font-medium" style={{ backgroundColor: "#7A001F" }}>
+        <a
+          href="#contacto"
+          className="px-5 py-3 rounded-xl text-white font-medium"
+          style={{ backgroundColor: "#7A001F" }}
+        >
           Cotizar ahora
         </a>
-        <a href="#servicios" className="px-5 py-3 rounded-xl border">Ver servicios</a>
+        <a href="#servicios" className="px-5 py-3 rounded-xl border border-white">
+          Ver servicios
+        </a>
       </div>
-    </div>
-    <div className="rounded-2xl shadow-xl border bg-white p-6">
-      <p className="text-sm text-neutral-700">COFEPRIS • Reporte post-servicio • Garantía por escrito</p>
     </div>
   </div>
 </section>
 
-{/* ¿Quiénes somos? */}
-<section id="nosotros" className="max-w-7xl mx-auto px-4 py-16">
-  <div className="grid md:grid-cols-2 gap-10 items-start">
-    <div>
-      <h2 className="text-3xl font-bold mb-3">¿Quiénes somos?</h2>
-      <p className="text-neutral-700">
-        <strong>Morten Fumigaciones</strong> es una empresa dedicada al control integral de plagas,
-        enfocada en soluciones eficaces, seguras y personalizadas para hogares, comercios e industrias.
-        Nuestro compromiso es proteger la salud de las personas, cuidar los espacios y preservar el
-        medio ambiente, mediante productos certificados y técnicas modernas de aplicación.
-      </p>
-      <p className="text-neutral-700 mt-3">
-        Priorizamos un servicio responsable, transparente y de calidad, construyendo relaciones de confianza
-        con cada cliente.
-      </p>
-    </div>
 
+  
     {/* Valores en tarjetas cortas */}
     <div className="rounded-2xl border p-6 bg-neutral-50">
       <h3 className="text-xl font-semibold">Nuestros valores</h3>
