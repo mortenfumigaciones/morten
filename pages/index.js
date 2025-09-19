@@ -44,7 +44,7 @@ useEffect(() => {
           <p className="hidden md:block">MORTEN · Manejo integral y ecológico de plagas</p>
           <div className="flex items-center gap-4">
             <a href="tel:+523313113610" className="flex items-center gap-2 hover:opacity-90">
-              <Phone size={16} /> <span>(33) 1311 3610</span>
+              <Phone size={16} /> <span>(+52) 33 1311 3610</span>
             </a>
             <a href="mailto:mortenfumigaciones@gmail.com" className="flex items-center gap-2 hover:opacity-90">
               <Mail size={16} /> <span>mortenfumigaciones@gmail.com</span>
