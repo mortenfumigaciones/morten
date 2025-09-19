@@ -247,11 +247,12 @@ useEffect(() => {
         {[
           "Cucarachas",
           "Ratas y ratones",
-          "Mosquitos",
+          "Moscas y mosquitos",
           "Hormigas",
           "Arañas",
           "Alacranes",
-          "Termitas y xilófagos",
+          "Termitas",
+          "Chinches",
         ].map((p) => (
           <li key={p} className="border rounded-xl px-3 py-2 bg-white">{p}</li>
         ))}
